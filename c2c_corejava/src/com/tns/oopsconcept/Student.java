@@ -1,39 +1,37 @@
 package com.tns.oopsconcept;
 
 public class Student {
-	private int id;
 	private String name;
-	private int marks;
- 
-	
-	public Student(int id,String name,int marks) {
-		super();
-		this.id=id;
-		this.name=name;
-		this.marks=marks;
-		
-	}
-	public int getId() {
-		return id;
-	}
+    private int marks;
 
-	public void setId(int id) {
-		this.id = id;
-	}
+    public Student(String name, int marks) {
+        this.name = name;
+        this.marks = marks;
+        System.out.println("Parameterized Constructor.");
+    }
 
-	public String getName() {
-		return name;
-	}
+    public Student() {
+        this.name = "Unknown";
+        this.marks = 0;
+        System.out.println("Default Constructor.");
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public int getMarks() {
-		return marks;
-	}
+    public int getMarks() {
+        return marks;
+    }
+    public void setMarks(int marks) {
+        this.marks = marks;
+    }
 
-	public void setMarks(int marks) {
-		this.marks = marks;
-	}
+    @Override
+    public String toString() {
+        return "Student [name=" + name + ", marks=" + marks + "]";
+    }
 }
