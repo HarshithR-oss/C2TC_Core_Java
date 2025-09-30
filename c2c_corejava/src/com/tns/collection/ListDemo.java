@@ -26,6 +26,11 @@ public class ListDemo {
 		ob.remove(2);
 		System.out.println(ob);
 		
+		
+		
+		
+		
+		
 	}
 
 }
